@@ -1,0 +1,461 @@
+/* reset style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+
+    font-family:'Josefin Sans', sans-serif ;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* global style */
+
+
+.bg_gray{
+background-color: rgba(250, 248, 248, 0.8);
+}
+.overlay{
+    position: relative;
+    background-color: rgba(15, 15, 14, 0.85);
+    width: 100%;
+/* height: 100%; */
+  color: aliceblue;
+display: inline-block;
+padding: 20%;
+text-align: center;
+  
+}
+.num_bold{
+    font-size: 30px;
+    font-weight: bold;
+}
+.img_overlay .overlay h2{
+    font-size: 60px;
+}
+.overlay p{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.img_overlay{
+    position: relative;
+}
+.Start{
+    
+    font-size: 23px;
+    position: relative;
+}
+
+.Start::before{
+    content: "";
+    height: 100%;
+    width: 10%;
+    background-color: rgba(240, 248, 255, 0.649);
+    position: absolute;
+  transform: skewx(-25deg);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation-name: light_back ;
+  animation-duration: 1s;
+  animation-play-state:paused;
+}
+
+
+@keyframes light_back{
+
+0%{
+    
+}
+25%{
+   
+    opacity: 1;
+}
+50%{
+    left: 100%;
+    opacity: 0;
+}
+75%{
+  
+    opacity: 1;
+}
+100%{
+    left: 0;
+    opacity: 1;
+}
+}
+.lines_right{
+    direction:rtl
+}
+.about h2{
+    font-weight: bold;
+}
+.line1{
+    width:45%;
+    height:4% ;
+    background-color: blue;
+    right: 0;
+}
+.about{
+    width: 13%;
+    text-align: center;
+}
+.line2{
+    width:85%;
+    height:2% ;
+    background-color: blue;
+}
+.Start:hover::before{
+    animation-play-state: running;
+}
+.menue-icon{
+    /* color: black */
+    /* background-color: rgb(192, 172, 172); */
+}
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+/* .Start:hover::before{
+    left: 100%;
+    transition: 0.4s;
+    opacity: 1;
+    
+} */
+
+
+
+.l{
+    position: absolute;
+}
+/* customer style */
+header ul{
+    list-style: none;
+}
+header li i{
+    font-size: 18px;
+    /* font-weight: bold; */
+
+    /* line-height: 1; */
+}
+header li .g{
+    line-height: 1.2;
+}
+nav  ul li a{
+    
+
+}
+
+.title_head{
+    position: relative;
+
+}
+.dropdown-menu{
+    opacity: 0;
+    position: absolute;
+    background-color: aliceblue;
+    color: black;
+   
+    border-top: 3px solid blue;
+    transition: 1s;
+    /* right: 100%; */
+  
+    display: inline-block;
+    left: 0;
+   
+}
+.title_head:hover .dropdown-menu {
+
+opacity: 1;
+
+left: 20%;
+
+}
+.head_a:hover{
+    
+    color:blue !important ;
+
+} 
+
+.square{
+    flex-direction: column;
+ left:auto;
+ margin-right: 2%;
+ margin-left: 0;
+ margin-bottom: 25%;
+
+}
+
+.square button:hover{
+    background-color: transparent; 
+    border: 2px solid rgb(191, 188, 188);
+    /* width: 10px;
+    height: 10px; */
+    transition: 0.4s;
+ transform: scale(10px,10px);
+}
+.carousel-indicators [data-bs-target]{
+    width: 7px;
+    height: 7px;
+    margin-top: 100%;
+    border-bottom: 0;
+    border-top: 0;
+   
+}
+.carousel-indicators [data-bs-target].btn3{
+    background-color: transparent; 
+    border: 2px solid rgb(255, 255, 255);
+    width: 8px;
+    height: 8px;
+ margin-left: 2px;
+}
+
+
+.ico_text{
+    font-size: 24px;
+    color: rgb(33, 31, 31);
+    margin-left: -30px;
+    margin-right: 17px;
+
+}
+.list_style{
+    list-style: none;
+}
+.about_content ul{
+    /* margin-left: -30; */
+}
+.about_icon{
+
+    position: absolute;
+   margin-left: 6%;
+   box-shadow: 0px 0px 12px 0px gray;
+   background-color: white;
+   z-index: 9000000000;
+   height: 92%
+   
+
+}
+.ab_rel{
+    position: relative;
+    /* height: 80%; */
+    /* box-shadow: 0px 0px 12px 0px gray; */
+    /* margin-left: 20%; */
+    
+}
+.ab_img{
+    margin-left: 40%;
+}
+
+.about_content p{
+    font-size: 14px;
+}
+.service{
+    background-image: url(../images/service-bg.jpg);
+
+background-attachment: fixed;
+
+
+}
+.overlay_service{
+    padding: 0;
+
+}
+.service-card{
+    border: 1px solid gainsboro;
+   
+    
+}
+.service-card i{
+    font-size: 50px;
+}
+.service_title{
+    padding-top: 8%;
+}
+.cards_bottom{
+    padding-bottom: 8%;
+}
+.our_service{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black;
+}
+
+.card_hover{
+    background-color: white;
+    color: black;
+    position: absolute;
+  transition: 0.3s;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+
+}
+.service_card_rel{
+    position: relative;
+}
+.service_card_rel:hover .card_hover {
+    /* opacity: 1; */
+    /* top: 0; */
+    height: 100%;
+}
+.p_width{
+
+
+    width: 70%;
+}
+.img_work{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    
+}
+.Our_work ul{
+    font-weight: bold;
+}
+.card_work{
+    border-radius: 8px;
+}
+.project_title{
+   
+position: absolute;
+width: auto;
+right: 10px;
+bottom: 10px;
+left: 10px;
+border-radius: 5px;
+opacity: 0;
+
+transform: scaleX(0);
+transition: 0.3s;
+
+background-color:#0d6dfdcf
+}
+
+.card_work:hover{
+    box-shadow: 0px 0px 16px 3px rgb(189, 189, 189);
+}
+.card_work:hover .project_title{
+
+opacity: 1;
+
+transform: scaleX(85%);
+right: 0;
+left: 0;
+
+}
+.card_team{
+    border: 0;
+    position: relative;
+    overflow: hidden;
+}
+.team_img{
+
+text-align: center;
+
+}
+
+.card_info{
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    transition: 0.5s;
+   
+}
+
+.card_team:hover .card_info{
+    top:30%;
+
+
+}
+
+.card_info p{
+    width: 80%;
+    
+    margin: auto;
+
+    position: relative;
+}
+.line_dark{
+    width: 80%;
+    height: 2px; 
+    background-color: black;
+    margin: auto;
+}
+
+
+.icon_creative{
+    width: 80%;
+
+    border-radius: 5px;
+  margin: auto;
+  transition-delay: 0.3s;
+ margin-top: 100%;
+
+transition: 0.6s;
+
+}
+.card_team:hover .icon_creative{
+
+
+margin-top: 0;
+
+}
+
+.arrow_up{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+    left: auto;
+    right: 50px;
+    /* position: absolute; */
+    position: fixed;
+    /* z-index: 9000; */
+   bottom: 50px;
+
+/* display: none; */
+   
+
+}
+.arrow_sec{
+    position: relative;
+}
+.arrow_up a i{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.card_pricing_top{
+    border-bottom:2px solid gainsboro ;
+}
+.Price_line{
+    width: 15%;
+    height: 0.3%;
+    background-color: rgba(0, 0, 255, 0.638);
+    
+
+}
+
+.gray_line{
+    width: 80%;
+    height: 0.3%;
+    background-color: rgba(165, 165, 169, 0.386);
+    margin: auto;    
+}
+.card_price2{
+    box-shadow: 0px 0px 12px 6px gainsboro;
+    
+}
+.input_mail{
+    width: 50%;
+}
